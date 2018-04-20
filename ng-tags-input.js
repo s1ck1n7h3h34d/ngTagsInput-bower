@@ -2,10 +2,10 @@
  * ngTagsInput v3.2.0
  * http://mbenford.github.io/ngTagsInput
  *
- * Copyright (c) 2013-2017 Michael Benford
+ * Copyright (c) 2013-2018 Michael Benford
  * License: MIT
  *
- * Generated at 2017-04-15 17:08:51 -0300
+ * Generated at 2018-04-20 12:58:14 +0300
  */
 (function() {
 'use strict';
@@ -422,7 +422,7 @@ tagsInput.directive('tagsInput', ["$timeout", "$document", "$window", "$q", "tag
                     // automatically, but since the model is an array, $setViewValue does nothing and it's up to us to do it.
                     // Unfortunately this won't trigger any registered $parser and there's no safe way to do it.
                     ngModelCtrl.$setDirty();
-                    focusInput();
+                    // focusInput();
                 })
                 .on('invalid-tag', function() {
                     scope.newTag.invalid = true;
